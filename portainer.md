@@ -9,6 +9,8 @@ helm upgrade -i portainer portainer/portainer \
   --set service.type=LoadBalancer
 ```
 
+https://10.10.159.85:9443
+
 ```
 kubectl label ns portainer \
   pod-security.kubernetes.io/enforce=privileged \
