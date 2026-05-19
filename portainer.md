@@ -16,3 +16,7 @@ kubectl label ns portainer \
   pod-security.kubernetes.io/warn=privileged \
   --overwrite
 ```
+
+```
+kubectl rollout restart deployment -n portainer
+```
