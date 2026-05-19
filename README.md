@@ -45,3 +45,10 @@ Check disk:
 talosctl -n 10.10.171.76 get disks --insecure
 ```
 
+```bash
+talosctl apply-config \
+  --insecure \
+  --nodes 10.10.171.76 \
+  --file ~/.talos/controlplane.yaml \
+  --talosconfig ~/.talos/talosconfig
+```
