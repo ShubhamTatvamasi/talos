@@ -30,18 +30,15 @@ Update talos config file:
 cp ~/.talos/talosconfig ~/.talos/config
 ```
 
-
 Update endpoint in talso config:
 ```bash
 talosctl config endpoint 10.10.159.85
 ```
 
-
 Update node in talso config:
 ```
 talosctl config node 10.10.159.85
 ```
-
 
 Apply Talso config: 
 ```bash
@@ -51,18 +48,19 @@ talosctl apply-config \
   --file ~/.talos/controlplane.yaml
 ```
 
-
 Bootstrap Talso cluster:
 ```bash
 talosctl bootstrap
 ```
+> Wait 2-3 minues after this.
+
+---
 
 Download kubeconfig:
 ```
 talosctl \
   kubeconfig ~/.talos/kubeconfig
 ```
-
 
 Set kubeconfig:
 ```bash
