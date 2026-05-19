@@ -2,6 +2,8 @@
 
 https://github.com/siderolabs/talos/releases
 
+https://github.com/siderolabs/talos/releases/download/v1.13.2/metal-amd64.iso
+
 Install talosctl:
 ```bash
 brew install siderolabs/tap/talosctl
