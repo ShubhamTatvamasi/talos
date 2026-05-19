@@ -9,3 +9,7 @@ kubectl label ns openebs \
   --overwrite
 ```
 
+Restart pod:
+```bash
+kubectl rollout restart deployment -n openebs
+```
