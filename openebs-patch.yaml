@@ -1,3 +1,5 @@
+cluster:
+  allowSchedulingOnControlPlanes: true
 machine:
   kubelet:
     extraMounts:
