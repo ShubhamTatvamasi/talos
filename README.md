@@ -21,6 +21,11 @@ Update talos config file:
 cp ~/.talos/talosconfig ~/.talos/config
 ```
 
+```bash
+yq -i '.cluster.allowSchedulingOnControlPlanes = true' ~/.talos/controlplane.yaml
+```
+
+
 Update endpoint in talso config:
 ```bash
 talosctl config endpoint 10.10.171.76
