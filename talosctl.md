@@ -1,7 +1,11 @@
 # talosctl
 
-Check all services:
+Check running services:
 ```bash
 talosctl service
 ```
 
+Check processes:
+```bash
+talosctl processes
+```
