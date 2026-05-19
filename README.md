@@ -11,6 +11,7 @@ Check connectivity to talos cluster:
 ```bash
 talosctl -n 10.10.159.85 get disks --insecure
 ```
+> We only need `--insecure` flag before we bootstrap our cluster
 
 Setup talos directory:
 ```
