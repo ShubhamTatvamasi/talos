@@ -36,3 +36,10 @@ node
 talosctl config node 10.10.171.76
 ```
 
+---
+
+Check disk:
+```bash
+talosctl -n 10.10.171.76 get disks --insecure
+```
+
