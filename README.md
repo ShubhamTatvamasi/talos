@@ -13,7 +13,7 @@ cd ~/.talos
 
 Get talos config
 ```bash
-talosctl gen config portainer-cluster https://10.0.171.76:6443
+talosctl gen config portainer-cluster https://10.10.171.76:6443
 ```
 
 Update talos config file:
@@ -23,7 +23,7 @@ cp ~/.talos/talosconfig ~/.talos/config
 
 Update endpoint and node in talso config:
 ```bash
-talosctl config endpoint 10.0.171.76
-talosctl config node 10.0.171.76
+talosctl config endpoint 10.10.171.76
+talosctl config node 10.10.171.76
 ```
 
