@@ -7,12 +7,12 @@ brew install siderolabs/tap/talosctl
 
 ---
 
-Check disk:
+Check connectivity to talos cluster:
 ```bash
 talosctl -n 10.10.159.85 get disks --insecure
 ```
 
-Setup talso directory:
+Setup talos directory:
 ```
 mkdir -p ~/.talos
 cd ~/.talos
@@ -30,17 +30,17 @@ Rename talos config file:
 mv ~/.talos/talosconfig ~/.talos/config
 ```
 
-Update endpoint in talso config:
+Update endpoint in talos config:
 ```bash
 talosctl config endpoint 10.10.159.85
 ```
 
-Update node in talso config:
+Update node in talos config:
 ```
 talosctl config node 10.10.159.85
 ```
 
-Apply Talso config: 
+Apply talos config: 
 ```bash
 talosctl apply-config \
   --insecure \
@@ -48,7 +48,7 @@ talosctl apply-config \
   --file ~/.talos/controlplane.yaml
 ```
 
-Bootstrap Talso cluster:
+Bootstrap talos cluster:
 ```bash
 talosctl bootstrap
 ```
