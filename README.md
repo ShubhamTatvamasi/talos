@@ -21,9 +21,13 @@ Update talos config file:
 cp ~/.talos/talosconfig ~/.talos/config
 ```
 
-Update endpoint and node in talso config:
+Update endpoint in talso config:
 ```bash
 talosctl config endpoint 10.10.171.76
+```
+
+node
+```
 talosctl config node 10.10.171.76
 ```
 
