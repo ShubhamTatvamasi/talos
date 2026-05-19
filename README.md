@@ -1,5 +1,7 @@
 # talos
 
+https://github.com/siderolabs/talos/releases
+
 Install talosctl:
 ```bash
 brew install siderolabs/tap/talosctl
