@@ -67,3 +67,10 @@ talosctl \
   --talosconfig ~/.talos/talosconfig \
   kubeconfig ~/.talos/kubeconfig
 ```
+
+
+```bash
+export KUBECONFIG=~/.talos/kubeconfig
+```
+
+
