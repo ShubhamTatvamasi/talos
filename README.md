@@ -5,6 +5,8 @@ Install talosctl:
 brew install siderolabs/tap/talosctl
 ```
 
+---
+
 Setup talso directory:
 ```
 mkdir -p ~/.talos
