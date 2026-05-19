@@ -52,3 +52,10 @@ talosctl apply-config \
   --file ~/.talos/controlplane.yaml \
   --talosconfig ~/.talos/talosconfig
 ```
+
+```bash
+talosctl bootstrap \
+  --nodes 10.10.171.76 \
+  --endpoints 10.10.171.76 \
+  --talosconfig ~/.talos/talosconfig
+```
