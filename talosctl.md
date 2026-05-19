@@ -7,5 +7,5 @@ talosctl service
 
 Check processes:
 ```bash
-talosctl processes
+talosctl ps
 ```
