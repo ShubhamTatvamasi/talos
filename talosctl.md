@@ -24,3 +24,8 @@ Check talos dashboard:
 ```bash
 talosctl dashboard
 ```
+
+List machine config:
+```bash
+talosctl get machineconfig -o yaml
+```
