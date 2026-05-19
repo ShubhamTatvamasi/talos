@@ -34,3 +34,9 @@ Patch machine:
 ```bash
 talosctl patch machineconfig --patch @openebs-patch.yaml -n 10.10.159.85
 ```
+
+Reboot node:
+```bash
+talosctl reboot -n 10.10.159.85
+```
+
