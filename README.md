@@ -7,15 +7,22 @@ brew install siderolabs/tap/talosctl
 
 ---
 
+Check disk:
+```bash
+talosctl -n 10.10.159.85 get disks --insecure
+```
+
 Setup talso directory:
 ```
 mkdir -p ~/.talos
 cd ~/.talos
 ```
 
-Get talos config
+Generate talos config
 ```bash
-talosctl gen config portainer-cluster https://10.10.171.76:6443
+talosctl gen config \
+  portainer-cluster \
+  https://10.10.159.85:6443
 ```
 
 Update talos config file:
@@ -23,54 +30,47 @@ Update talos config file:
 cp ~/.talos/talosconfig ~/.talos/config
 ```
 
-```bash
-yq -i '.cluster.allowSchedulingOnControlPlanes = true' ~/.talos/controlplane.yaml
-```
-
 
 Update endpoint in talso config:
 ```bash
-talosctl config endpoint 10.10.171.76
+talosctl config endpoint 10.10.159.85
 ```
 
-node
-```
-talosctl config node 10.10.171.76
-```
 
----
-
-Check disk:
-```bash
-talosctl -n 10.10.171.76 get disks --insecure
+Update node in talso config:
+```
+talosctl config node 10.10.159.85
 ```
 
+
+Apply Talso config: 
 ```bash
 talosctl apply-config \
   --insecure \
-  --nodes 10.10.171.76 \
-  --file ~/.talos/controlplane.yaml \
-  --talosconfig ~/.talos/talosconfig
+  --nodes 10.10.159.85 \
+  --file ~/.talos/controlplane.yaml
 ```
 
+
+Bootstrap Talso cluster:
 ```bash
-talosctl bootstrap \
-  --nodes 10.10.171.76 \
-  --endpoints 10.10.171.76 \
-  --talosconfig ~/.talos/talosconfig
+talosctl bootstrap
 ```
 
+Download kubeconfig:
 ```
 talosctl \
-  --nodes 10.10.171.76 \
-  --endpoints 10.10.171.76 \
-  --talosconfig ~/.talos/talosconfig \
   kubeconfig ~/.talos/kubeconfig
 ```
 
 
+Set kubeconfig:
 ```bash
 export KUBECONFIG=~/.talos/kubeconfig
 ```
 
+Test connection:
+```
+kubectl get po -A
+```
 
