@@ -9,3 +9,8 @@ Check processes:
 ```bash
 talosctl ps
 ```
+
+read file:
+```bash
+talosctl read /etc/os-release
+```
