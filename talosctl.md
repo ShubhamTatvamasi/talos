@@ -10,6 +10,11 @@ Check processes:
 talosctl ps
 ```
 
+list files:
+```bash
+talosctl ls /var/openebs/local
+```
+
 read file:
 ```bash
 talosctl read /etc/os-release
