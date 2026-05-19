@@ -48,6 +48,7 @@ talosctl apply-config \
   --nodes 10.10.159.85 \
   --file ~/.talos/controlplane.yaml
 ```
+> This will reboot the nodes
 
 Bootstrap talos cluster:
 ```bash
