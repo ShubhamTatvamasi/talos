@@ -14,3 +14,8 @@ read file:
 ```bash
 talosctl read /etc/os-release
 ```
+
+Check talos dashboard:
+```bash
+talosctl dashboard
+```
