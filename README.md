@@ -25,9 +25,9 @@ talosctl gen config \
   https://10.10.159.85:6443
 ```
 
-Update talos config file:
+Rename talos config file:
 ```bash
-cp ~/.talos/talosconfig ~/.talos/config
+mv ~/.talos/talosconfig ~/.talos/config
 ```
 
 Update endpoint in talso config:
