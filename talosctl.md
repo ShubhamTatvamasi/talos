@@ -30,3 +30,7 @@ Check talos dashboard:
 talosctl dashboard
 ```
 
+Check client and server version:
+```bash
+talosctl version
+```
