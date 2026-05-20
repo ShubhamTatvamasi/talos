@@ -30,6 +30,11 @@ Check talos dashboard:
 talosctl dashboard
 ```
 
+shutdown the node:
+```bash
+talosctl shutdown
+```
+
 Check client and server version:
 ```bash
 talosctl version
