@@ -1,5 +1,10 @@
 # talosctl
 
+Check cluster health:
+```bash
+talosctl health
+```
+
 Check running services:
 ```bash
 talosctl service
